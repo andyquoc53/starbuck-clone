@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --spacing-1: 40px;
+  --spacing-2: 24px;
+  --spacing-3: 16px;
+}
+
+
+@layer base{
+  *{
+    font-family: "SoDo Sans SemiBold", sans-serif;
+    box-sizing: border-box;
+  }
+}
+
+
+@layer components{
+  .transformation {
+    @apply active:scale-90 ease-in duration-300;
+  }
+
+  .banner-light{
+    @apply lg:text-[50px] text-[28px] mb-6 leading-tight;
+  }
+
+  .banner-des-light{
+    @apply lg:text-[24px] text-[22px] leading-relaxed font-extralight;
+  }
+
+  .banner-btn-light{
+    @apply md:text-[16px] text-[14px];
+  }
+
+  .banner-2{
+    @apply text-[22px] md:text-[24px] mb-4 leading-loose;
+  }
+
+  .banner-des-2{
+    @apply text-[16px] md:text-[19px] leading-loose;
+  }
+
+  .banner-btn-2{
+    @apply text-[14px] md:text-[16px];
+  }
+  
+
+
+
+  .hover-green{
+    @apply hover:bg-[#014a2a];
+  }
+}
+
+
+
